@@ -224,4 +224,94 @@ console.log(countVowels("The quick broWN foX"))
 // console.log(findVowels());
 
 
+// 14 Write a function called isPowerOfTwo that takes an integar num as input and returns true if num is a power of true and false otherwise.
+
+// const number =  prompt("Enter the number:- ")
+/*const isPowerOfTwo = (number)=>{
+    let op = false;
+    for(let i = 1; i<number; i++){
+        if(2**i === number){
+            op = true;
+        }
+    }
+    return op;
+}
+console.log(isPowerOfTwo(8));
+console.log(isPowerOfTwo(7));
+*/
+
+//15 . Write a function to calculate the sum of squares of all elements in an array. For example , given the array [1, 2, 3] the function should be return 14.
+
+/* let arr = [1, 2, 3];
+const sumOfSquare = ()=>{
+    let sum = 0;
+    for(let elem of arr){
+        sum = sum + elem*elem;
+    }
+    return sum ;
+}
+console.log(sumOfSquare())
+// console.log(sumOfSquare([1, 2, 3]));*/
+
+// Second Way
+ /*let arr = [1, 2, 3, 5]
+ const sumOfSquare = ()=>{
+     return arr.reduce((accum, curElem) =>(accum = accum + curElem*curElem), 0)
+ }
+
+ console.log(sumOfSquare())*/ 
+
+
+ //16 Find the minimum value in an Array.
+ // Write a function findMin that takes an array of number as input ans return the minimum value found in the array.
+
+
+//  const minValue = (arr)=>{
+// //      arr = arr.sort((a, b) =>{
+// // if(b>a) return -1;
+// //     })
+// //     return arr[0];
+
+//     if(arr.length === 0) return "Arr is empty"
+//  return Math.min(...arr)
+//  }
+// console.log(minValue([3, 4, 5, 6, 3, 1]))
+//  console.log(minValue([-1, 4, 5, 2 -0, 4, -3]));
+// console.log(minValue([]));
+
+
+//17 Write a funcrtion to convert string into camaleCase.
+
+/*const toCamelCase = (str) =>{
+    return str
+    .trim()
+    .split(" ")
+    .map((curElem, index) =>{
+        if(index === 0){
+            return curElem.toLowerCase()
+        }
+        else{
+ return curElem.charAt(0).toUpperCase() + curElem.slice(1).toLowerCase();
+        }
+    })
+    .join("")
+}
+
+console.log(toCamelCase(" Hello, mY name is Narendra kuShawaha")) */
+
+
+//018 Write a function to check if a character is uppercase or lowercase.
+//  const toUpperCase = (char)=>{
+//     if (char.charCodeAt(0) >= 65 &&  char.charCodeAt(0) <= 90){
+//         return true
+//     }
+//     return false
+//  }
+
+//2nd Way
+//  return char === char.toUpperCase();
+//  }
+
+// console.log(toUpperCase("S"))  
+
 
